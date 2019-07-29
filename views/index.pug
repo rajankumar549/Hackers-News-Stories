@@ -1,0 +1,43 @@
+extends layout
+
+block content
+  div
+    div
+      form#searchNews.mdl-grid.search-form(action='#')
+        div.mdl-cell.mdl-cell--12-col
+          h4(style="margin:0")
+            | Search More About Hackers
+        div.mdl-cell.mdl-cell--4-col
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            input#searchNewsByTitle.mdl-textfield__input(type='text')
+            label.mdl-textfield__label(for='sample1') By Title
+        div.mdl-cell.mdl-cell--4-col
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            input#searchNewsByText.mdl-textfield__input(type='text')
+            label.mdl-textfield__label(for='sample1') By Text
+        div.mdl-cell.mdl-cell--4-col
+          .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+            input#searchNewsByUrl.mdl-textfield__input(type='text')
+            label.mdl-textfield__label(for='sample1') By URL
+        div.mdl-cell.mdl-cell--4-col
+            button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored
+              | Find Now
+    div.mdl-cell.mdl-cell--12-col
+      div.mdl-cell.mdl-cell--12-col
+        h3 
+          | News
+      div.mdl-cell.mdl-cell--12-col
+        ul.demo-list-three.mdl-list#newsList
+          li.mdl-list__item.mdl-list__item--three-line
+            span.mdl-list__item-primary-content
+              span Bryan Cranston
+              div.news-url URL
+                a(href="www.google.com") www.google.com
+              span.mdl-list__item-text-body
+                | Bryan Cranston played the role of Walter in Breaking Bad. He is also known
+                | for playing Hal in Malcom in the Middle.
+              
+            span.mdl-list__item-secondary-content
+              a.mdl-list__item-secondary-action(href='#')
+                i.material-icons link
+
