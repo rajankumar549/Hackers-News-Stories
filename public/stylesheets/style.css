@@ -1,4 +1,4 @@
-body {
+/* body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -23,7 +23,7 @@ p{
   margin-inline-end: 0px;
   color: rgb(113, 120, 126);
   font-family: 'Lato', sans-serif;
-}
+} */
 .btn-primary:hover {
   color: #fff;
   background-color: #0069d9;
@@ -218,4 +218,20 @@ p{
   height: 18%;
   border-radius: 100%;
   background: rgba(0, 0, 0, 0.2);
+}
+.search-form{
+  background: #f2f4f8;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.news-url{
+  padding-top: 10px;
+  font-style: italic;
+  font-size: 80%;
+}
+.news-list{
+  background: #f2f4f8;
+  margin: 20px 0;
+  border-radius: 10px;
 }
